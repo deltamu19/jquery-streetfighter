@@ -1,3 +1,6 @@
+* {
+	border: 1px solid orange;
+}
 body {
 	background-color: #000000;
 	font-family: 'Press Start 2P', cursive;
@@ -12,7 +15,8 @@ p {
 .main {
 	background-color: #FFFFFF;
 	margin-top: 110px;
-	padding-left: 100px;
+	padding-left: 95px;
+	padding-right: 95px;
 	height: 500px;
 	min-width: 1200px;
 	position: relative;
@@ -22,6 +26,12 @@ p {
 /* Ryu Section */
 .ryu {
 	float: left;
+	width: 659px;
+	height: 494px;
+}
+
+.hulk-ryu {
+	float: right;
 	width: 659px;
 	height: 494px;
 }
@@ -97,6 +107,6 @@ p {
 	float: left;
 	position: absolute;
 	top: 120px;
-	left: 763px;
+	left: 759px;
 	z-index: 10;
 }
