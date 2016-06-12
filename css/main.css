@@ -4,7 +4,8 @@ body {
 	font-weight: 400;
 }
 
-p {
+p,
+h1 {
 	margin: 125px 0;
 	text-align: center;
 	text-transform: uppercase;
@@ -131,7 +132,8 @@ p {
 }
 
 /* Intro Section */
-.instruct {
+.instruct,
+.fight {
 	height: 494px;
 	width: 400px;
 	position: relative;
@@ -139,7 +141,8 @@ p {
 }
 
 .logo,
-.instruct {
+.instruct,
+.fight {
 	display: none;
 }
 

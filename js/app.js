@@ -99,7 +99,13 @@ function playIntro () {
 	$('#intro-sound')[0].play();
 	$('.logo').fadeIn(2000, function() {
 		$(this).fadeOut(1000, function() {
-			$('.instruct').fadeIn(1000);
+			$('.instruct').fadeIn(1000, function() {
+				$(this).fadeOut(3000, function() {
+					$('.fight').fadeIn(1000, function() {
+						$(this).fadeOut(1000);
+					})
+				})
+			});
 		})
 	})
 };
