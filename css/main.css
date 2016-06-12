@@ -34,6 +34,7 @@ p {
 .hulk-ryu {
 	float: right;
 	filter: hue-rotate(90deg);
+	-webkit-filter: hue-rotate(90deg);
 }
 
 .hulk-hadouken,
