@@ -101,6 +101,9 @@ function playIntro () {
 		$(this).fadeOut(1000, function() {
 			$('.instruct').fadeIn(1000, function() {
 				$(this).fadeOut(3000, function() {
+					$('#fight-sound')[0].volume = 0.5;
+					$('#fight-sound')[0].load();
+					$('#fight-sound')[0].play();
 					$('.fight').fadeIn(1000, function() {
 						$(this).fadeOut(1000);
 					})
