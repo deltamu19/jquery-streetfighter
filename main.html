@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Streetfighter</title>
+	<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -16,7 +17,19 @@
 		</div>
 		<div class="hadouken">
 		</div>
+		<div class="intro">
+			<div class="logo"></div>
+			<div class="instruct">
+			<p>Click on Ryu to make him throw a Hadouken. </p>
+			<p>Press and hold down the "x" key to make him strike a pose.</p>
+			</div>
+		</div>
+		<div class="hadouken">
+		</div>
+		<audio id="intro-sound" src="sound/vs-music.mp3"></audio>
 		<audio id="hadouken-sound" src="sound/hadouken.mp3">
+		</audio>
+		<audio id="cool-sound" src="sound/ryu-stage.mp3">
 		</audio>
 	</div>
 	<script src="http://code.jquery.com/jquery.min.js"></script>

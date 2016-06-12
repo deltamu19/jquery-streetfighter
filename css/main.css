@@ -1,5 +1,12 @@
 body {
 	background-color: #000000;
+	font-family: 'Press Start 2P', cursive;
+	font-weight: 400;
+}
+
+p {
+	margin: 125px 0;
+	text-align: center;
 }
 
 .main {
@@ -67,5 +74,29 @@ body {
 	position: absolute;
 	top: 165px;
 	left: 550px;
+	z-index: 20;
+}
+
+/* Intro Section */
+.instruct {
+	height: 494px;
+	width: 400px;
+	position: relative;
+	float: left;
+}
+
+.logo,
+.instruct {
+	display: none;
+}
+
+.logo {
+	background-image: url('../images/streetfighter-logo.png');
+	height: 252px;
+	width: 396px;
+	float: left;
+	position: absolute;
+	top: 120px;
+	left: 763px;
 	z-index: 10;
 }
