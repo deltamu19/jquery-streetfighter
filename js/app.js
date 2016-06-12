@@ -72,6 +72,25 @@ $(document).ready(function() {
 		$('.hulk-ryu-ready').show();
 	});
 
+	$(document).keydown(function(event) {
+		if (event.which == 89) {
+			playRyucool();
+			$('.hulk-ryu-still').hide();
+			$('.hulk-ryu-ready').hide();
+			$('hulk-ryu-throwing').hide();
+			$('.hulk-ryu-cool').show();
+		}
+	})
+	.keyup(function(event) {
+		if (event.which == 89) {
+			$('#cool-sound').stop();
+			$('#cool-sound').load();
+			$('.hulk-ryu-still').show();
+			$('.hulk-ryu-ready').hide();
+			$('.hulk-ryu-throwing').hide();
+			$('.hulk-ryu-cool').hide();
+		}
+	});
 });
 
 function playIntro () {
