@@ -13,11 +13,11 @@ $(document).ready(function() {
 		$('.ryu-ready').hide();
 		$('.ryu-throwing').show();
 		$('.hadouken').finish().show().animate(
-			{'left': '1300px'},
-			750,
+			{'left': '81.250em'},
+			46.875,
 			function() {
 				$(this).hide();
-				$(this).css('left', '550px');
+				$(this).css('left', '34.375em');
 			}
 		);
 	})
@@ -59,11 +59,11 @@ $(document).ready(function() {
 		$('.hulk-ryu-ready').hide();
 		$('.hulk-ryu-throwing').show();
 		$('.hulk-hadouken').finish().show().animate(
-			{'right': '1300px'},
-			750,
+			{'right': '81.250em'},
+			46.875,
 			function() {
 				$(this).hide();
-				$(this).css('right', '550px');
+				$(this).css('right', '34.375em');
 			}
 		);
 	})
@@ -72,8 +72,8 @@ $(document).ready(function() {
 		$('.hulk-ryu-ready').show();
 	});
 
-	$(document).keydown(function(event) {
-		if (event.which == 89) {
+	$(document).keydown(function(e) {
+		if (e.keyCode == 89) {
 			playRyucool();
 			$('.hulk-ryu-still').hide();
 			$('.hulk-ryu-ready').hide();
@@ -81,8 +81,8 @@ $(document).ready(function() {
 			$('.hulk-ryu-cool').show();
 		}
 	})
-	.keyup(function(event) {
-		if (event.which == 89) {
+	.keyup(function(e) {
+		if (e.keyCode == 89) {
 			$('#cool-sound').stop();
 			$('#cool-sound').load();
 			$('.hulk-ryu-still').show();
@@ -93,7 +93,7 @@ $(document).ready(function() {
 	});
 });
 
-function playIntro () {
+playIntro = function () {
 	$('#intro-sound')[0].volume = 0.5;
 	$('#intro-sound')[0].load();
 	$('#intro-sound')[0].play();
@@ -106,20 +106,20 @@ function playIntro () {
 					$('#fight-sound')[0].play();
 					$('.fight').fadeIn(1000, function() {
 						$(this).fadeOut(1000);
-					})
-				})
+					});
+				});
 			});
-		})
-	})
+		});
+	});
 };
 
-function playHadouken () {
+playHadouken = function () {
 	$('#hadouken-sound')[0].volume = 0.5;
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
 };
 
-function playRyucool () {
+playRyucool = function () {
 	$('#cool-sound')[0].volume = 0.5;
 	$('#cool-sound')[0].play();
 };
